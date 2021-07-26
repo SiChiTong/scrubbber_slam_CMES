@@ -1,0 +1,15 @@
+
+//输入变量
+varying vec2  varPos;
+varying vec4  varColor;
+
+void main()                               
+{                  
+
+    float dist = length(varPos - gl_FragCoord.xy)*0.68;
+    
+    //float alpha = 1.0 - smoothstep(0.0, 1.0, dist);
+    float alpha = 1.0 - clamp(dist, 0.0, 1.0);
+	 
+    gl_FragColor = vec4(varColor.xyz, alpha) ;   
+}                                         

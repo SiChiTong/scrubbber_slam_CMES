@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(lads_velodyne_msgs)
+
+find_package(catkin REQUIRED COMPONENTS 
+                 message_generation 
+                 std_msgs 
+                 geometry_msgs
+                 velodyne_msgs
+                 )
+
+add_message_files(
+        DIRECTORY msg
+        FILES
+        VelodyneScan.msg
+        VelodyneScanUnified.msg
+)
+
+generate_messages(
+        DEPENDENCIES
+        std_msgs
+        velodyne_msgs
+)
+
+catkin_package(
+        CATKIN_DEPENDS
+        message_runtime
+        std_msgs
+        velodyne_msgs
+)

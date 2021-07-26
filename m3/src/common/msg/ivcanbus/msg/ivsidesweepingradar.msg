@@ -1,0 +1,13 @@
+std_msgs/Header header
+uint16 left_TF_radar_dis
+uint16 right_TF_radar_dis
+uint16 left_TF_radar_strength
+uint16 right_TF_radar_strength
+uint16 left_TF_radar_temp
+uint16 right_TF_radar_temp
+uint16 leftsensor1_AD
+uint16 leftsensor2_AD
+uint16 rightsensor1_AD
+uint16 rightsensor2_AD
+uint16 anglesensor_AD
+float32 dis_from_angle_sensor

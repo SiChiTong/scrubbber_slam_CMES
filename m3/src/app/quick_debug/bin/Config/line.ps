@@ -1,0 +1,19 @@
+
+
+//输入变量
+varying vec3  varColor;
+varying float  varLineWidth;
+varying float  varDistance;
+
+void main()                               
+{                                  
+    float blur = 0.002;
+
+	//当前像素到线中心的距离
+	float dist = varDistance * varLineWidth;
+	
+	float alpha = min((varLineWidth - dist), (dist + varLineWidth)) / blur; 
+	alpha = clamp(alpha, 0.0, 1.0);
+	  
+    gl_FragColor = vec4(varColor, alpha);
+}                                         

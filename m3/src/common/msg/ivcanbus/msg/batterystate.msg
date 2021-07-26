@@ -1,0 +1,15 @@
+std_msgs/Header header
+float32 battotalvol
+float32 battotalcur
+float32 batsoc
+uint8 sysstatus1
+uint8 sysstatus2
+uint8 bmsselfcheck
+uint8 chargelinkstate
+float32 bathealthstate
+uint8 sysstatus3
+uint8 runmode
+uint8 ac_cc
+float32 resienergy
+uint8 bmswarninglevel
+uint16 remainingchargingtime

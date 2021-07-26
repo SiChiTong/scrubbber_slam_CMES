@@ -1,0 +1,34 @@
+add_library(${PROJECT_NAME}.pipeline
+        pipeline_engine.cc
+        pipeline_context.cc
+        data_fetching/data_fetching.cc
+        check_in/check_in.cc
+        check_in/file_filter.cc
+        preprocessing/preprocessing.cc
+        preprocessing/bag_convert.cc
+        dr_frontend/dr_frontend.cc
+        lidar_frontend/lidar_frontend.cc
+        optimization_s1/optimization_s1.cc
+        merge_map/merge_map.cc
+        loop_closing/loop_closing.cc
+        optimization_s2/optimization_s2.cc
+        check_out/check_out.cc
+        check_out/scan_builder/scan_builder.cc
+        validation/validation.cc
+        check_out/filter_ndt_score/filter_ndt_score.cc
+        )
+
+target_link_libraries(${PROJECT_NAME}.pipeline
+        ${PROJECT_NAME}.common
+        ${PROJECT_NAME}.io
+        ${PROJECT_NAME}.core
+        ${PROJECT_NAME}.tools
+        ${third_party_libs}
+        )
+
+add_dependencies(${PROJECT_NAME}.pipeline
+        ${PROJECT_NAME}.core
+        ${PROJECT_NAME}.io
+        ${PROJECT_NAME}.common
+        ${PROJECT_NAME}.tools
+        )

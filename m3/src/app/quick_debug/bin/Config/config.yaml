@@ -1,0 +1,15 @@
+LoginParams:
+  UserName: huangyou
+  PassWord: 123456
+  IsRemberPas: 1
+SettingParams:
+  grid_size: 120
+  line_width: 20
+  point_size: 10
+PointCloudFilterParams:
+  min_intensity: 0
+  max_intensity: 255
+  min_height: 0
+  max_height: 70
+HostName:
+  name: http://cluster2.avcp.idriverplus.com

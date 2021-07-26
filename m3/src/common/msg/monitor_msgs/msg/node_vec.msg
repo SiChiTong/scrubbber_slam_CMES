@@ -1,0 +1,1 @@
+monitor_msgs/node_stat[]  info_vec

@@ -1,0 +1,20 @@
+
+uniform vec3  vLimitIntensity;
+uniform vec3  vHighLimit;
+
+//ÊäÈë±äÁ¿
+varying vec4  varColor;
+varying float varHigh; 
+
+void main()                               
+{
+  if ((varColor.w  > vLimitIntensity.x && varColor.w < vLimitIntensity.y) &&
+      (varHigh  > vHighLimit.x &&  varHigh < vHighLimit.y) )
+  {
+     gl_FragColor = vec4(varColor.rgb, 1.0);
+  }
+  else
+  {
+  	 discard; 
+  }
+}     

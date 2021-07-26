@@ -1,0 +1,37 @@
+add_library(${PROJECT_NAME}.renderGL
+        gl_api.cc
+        mc_buffer.cc
+        mc_hwd_index_buffer.cc
+        mc_hdw_vertex_buffer.cc
+        mc_image.cc
+        mc_uniform_param.cc
+        mc_shader.cc
+        mc_vertex_format.cc
+        mc_program.cc
+        mc_render_layout.cc
+        mc_render_pass.cc
+        mc_render_state_object.cc
+        mc_render_state_desc.cc
+        mc_render_technique.cc
+        mc_technique_manager.cc
+        mc_texture2d.cc
+        mc_vertex_buffer_accessor.cc
+        camera.cc
+        state.cc
+        state_set.cc
+        point3d.cc
+        group_node.cc
+        object.cc
+        render_leaf.cc
+
+        drawable.cc
+        area_drawable.cc
+        line_drawable.cc
+        edge_drawable.cc
+        sign_drawable.cc
+        wline_drawable.cc
+        pointset_drawable.cc
+        point_drawable.cc
+        factory_drawable.cc
+        graph_drawable.cc
+        )

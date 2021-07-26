@@ -1,0 +1,17 @@
+ 
+uniform  sampler2D  texSampler;
+
+// ‰»Î±‰¡ø
+varying vec2 outTexcoord;
+varying float  outselected;
+
+void main()                               
+{    
+
+  vec4 texColor = texture2D(texSampler, outTexcoord);
+  if(outselected == 1.0){
+  	  gl_FragColor = vec4(1.0,texColor.y,texColor.z,texColor.w);
+  }else{
+  	  gl_FragColor = texColor;
+  }      
+}                                         

@@ -1,0 +1,13 @@
+std_msgs/Header header
+
+uint8 lidar_status
+uint8 gnss_status
+uint8 calib_status
+float64 time_s
+uint8 calib_valid
+uint8 calib_times
+
+uint8 base_length_calib_status
+uint8 antenna_angle_calib_status
+uint8 base_length_calib_valid
+uint8 antenna_angle_calib_valid

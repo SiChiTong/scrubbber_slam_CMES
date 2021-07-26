@@ -1,0 +1,12 @@
+std_msgs/Header header
+bool update
+uint32 TimeTag
+int32 week
+float64 utcTime
+float64 gyro_x
+float64 gyro_y
+float64 gyro_z
+float64 acce_x
+float64 acce_y
+float64 acce_z
+float64 Temperature

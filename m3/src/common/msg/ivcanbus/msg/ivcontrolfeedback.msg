@@ -1,0 +1,16 @@
+std_msgs/Header header
+common_msgs/fault_vec fault_vec
+uint8 epsstate
+float32 realstrtorque
+int16 uisteerangle
+uint8 shiftlvlposition
+uint8 sysstatus
+uint8 alarm_dog_stop
+uint8 feed_dog_failed_stop
+uint8 AEB_enablestate
+uint16 left_TF_radar_dis
+uint16 right_TF_radar_dis
+uint16 anglesensor_AD
+float32 dis_from_angle_sensor
+bool task_emergencystop
+bool parallel_driving_mode

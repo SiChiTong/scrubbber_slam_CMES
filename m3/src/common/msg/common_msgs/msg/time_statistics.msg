@@ -1,0 +1,2 @@
+common_msgs/time_status[] dev_time_status_msg
+float64 sending_timestamp
